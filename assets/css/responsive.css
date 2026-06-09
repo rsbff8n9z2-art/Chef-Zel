@@ -1,0 +1,138 @@
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: var(--secondary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .recipes-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .recipe-card img {
+        height: 200px;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .contact-form {
+        gap: 0.8rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer .container {
+        gap: 0.8rem;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 60px 20px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+    body {
+        font-size: 14px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-dark: #f0f0f0;
+        --text-light: #b0b0b0;
+        --bg-light: #1a1a1a;
+        --white: #0d0d0d;
+    }
+}

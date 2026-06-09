@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Deployment
+.vercel/
+.netlify/
+.ftpconfig
+sftp-config.json
+
+# Logs
+*.log
+log/
+
+# Temp files
+.tmp/
+temp/
+*.backup
+Thumbs.db
