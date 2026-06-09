@@ -14,14 +14,18 @@ dist/
 build/
 .next/
 out/
+.parcel-cache/
 
 # IDE and editor
 .vscode/
 .idea/
+*.sublime-workspace
+*.sublime-project
 *.swp
 *.swo
 *~
 .DS_Store
+Thumbs.db
 
 # Deployment
 .vercel/
@@ -32,9 +36,18 @@ sftp-config.json
 # Logs
 *.log
 log/
+logs/
 
 # Temp files
 .tmp/
 temp/
+tmp/
 *.backup
-Thumbs.db
+*.bak
+
+# OS files
+.AppleDouble
+.LSOverride
+
+# Misc
+.cache/

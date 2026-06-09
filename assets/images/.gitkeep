@@ -1,2 +1,15 @@
-# This file ensures the images directory is tracked by Git
-# Add your image files here
+# This directory contains image assets for Chef Zel website
+# Add your images here:
+# - chef-zel-portrait.jpg (About section)
+# - product-cookies.jpg
+# - product-spices.jpg
+# - product-pantry.jpg
+# - product-sauces.jpg
+# - product-tomatoes.jpg
+# - product-beans.jpg
+# - event-festival.jpg
+# - event-farmers-market.jpg
+# - event-popup.jpg
+# - event-album-release.jpg
+# - event-tasting.jpg
+# - event-promotion.jpg

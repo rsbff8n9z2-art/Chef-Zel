@@ -1,6 +1,6 @@
-/* Responsive Design */
+/* Responsive Design - Mobile First */
 
-/* Tablets */
+/* Tablets (768px and below) */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -11,11 +11,12 @@
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: var(--secondary-color);
+        background: var(--dark-brown);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         gap: 0;
+        padding: 1rem 0;
     }
 
     .nav-menu.active {
@@ -27,95 +28,372 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .hero-content h2 {
-        font-size: 2rem;
+    .nav-link {
+        font-size: 0.9rem;
     }
 
-    .hero-content p {
-        font-size: 1.2rem;
+    /* Hero */
+    .hero {
+        padding: 100px 20px;
+        min-height: 500px;
     }
 
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        gap: 1rem;
+    }
+
+    /* Section titles */
     section h2 {
         font-size: 2rem;
     }
 
-    .recipes-grid,
-    .services-grid {
+    /* About */
+    .about-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text h2 {
+        text-align: center;
+    }
+
+    /* Products */
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* Catering Options */
+    .catering-options {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .catering-inquiry {
+        padding: 2rem;
+    }
+
+    /* Contact */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Events */
+    .events-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* Wholesale */
+    .wholesale-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     section {
-        padding: 50px 20px;
+        padding: 60px 20px;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
     }
 }
 
-/* Mobile Phones */
+/* Mobile Phones (480px and below) */
 @media (max-width: 480px) {
     .logo {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
-    .hero-content h2 {
+    .nav-link {
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 80px 15px;
+        min-height: 400px;
+    }
+
+    .hero-content h1 {
         font-size: 1.8rem;
+        letter-spacing: 1px;
     }
 
-    .hero-content p {
+    .hero-subtitle {
         font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
     }
 
     .btn {
         padding: 10px 20px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-small {
+        padding: 8px 15px;
+        font-size: 0.75rem;
+    }
+
+    /* Sections */
+    section {
+        padding: 40px 15px;
     }
 
     section h2 {
         font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
         margin-bottom: 2rem;
     }
 
-    .recipe-card img {
-        height: 200px;
-    }
-
-    .service-card {
-        padding: 1.5rem;
-    }
-
-    .contact-form {
-        gap: 0.8rem;
-    }
-
-    .social-links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .footer .container {
-        gap: 0.8rem;
-    }
-
-    .hero {
-        min-height: 400px;
-        padding: 60px 20px;
-    }
-}
-
-/* Extra Small Devices */
-@media (max-width: 360px) {
-    body {
-        font-size: 14px;
-    }
-
-    .hero-content h2 {
+    /* About */
+    .about-text h2 {
         font-size: 1.5rem;
     }
 
-    .hero-content p {
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .about-image {
+        border-radius: 6px;
+    }
+
+    /* Products */
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-card h3 {
+        font-size: 1rem;
+        padding: 1rem 1rem 0.3rem;
+    }
+
+    .product-card p {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+
+    .product-price {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem 0;
+    }
+
+    .product-card .btn {
+        margin: 0.8rem 1rem;
+    }
+
+    /* Catering */
+    .catering-card {
+        padding: 1.5rem;
+        border-left-width: 3px;
+    }
+
+    .catering-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .catering-inquiry {
+        padding: 1.5rem;
+    }
+
+    .catering-inquiry h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Forms */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Music */
+    .spotify-embed {
+        max-height: 400px;
+    }
+
+    .platform-buttons,
+    .social-buttons {
+        gap: 0.5rem;
+    }
+
+    .btn-platform,
+    .btn-social {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+        margin: 0.3rem;
+    }
+
+    /* Wholesale */
+    .wholesale-card {
+        padding: 1.5rem;
+    }
+
+    .wholesale-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .wholesale-inquiry {
+        padding: 1.5rem;
+    }
+
+    /* Events */
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .event-card img {
+        height: 160px;
+    }
+
+    .event-tag {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    .event-card h3 {
+        font-size: 1.1rem;
+        padding: 1rem 1rem 0.3rem;
+    }
+
+    .event-card p {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+
+    .event-card .btn {
+        margin: 0.8rem 1rem;
+    }
+
+    /* Contact */
+    .contact-content {
+        gap: 1.5rem;
+    }
+
+    .info-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-icon {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 15px 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra Small Devices (360px and below) */
+@media (max-width: 360px) {
+    body {
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
         font-size: 0.9rem;
     }
 
     section h2 {
         font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.75rem;
+    }
+
+    .products-grid {
+        gap: 1rem;
+    }
+
+    .catering-card {
+        padding: 1.2rem;
+    }
+
+    .event-card p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape orientation optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 }
 
@@ -128,11 +406,34 @@
     }
 }
 
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-dark: #f0f0f0;
+        --primary-cream: #2a2520;
+        --primary-brown: #d4af37;
+        --dark-brown: #f5f1e8;
+        --black: #ffffff;
+        --white: #1a1a1a;
+        --soft-gold: #e8c547;
+        --earth-tan: #b89d6b;
+        --light-beige: #3d3226;
+        --text-dark: #f5f1e8;
         --text-light: #b0b0b0;
-        --bg-light: #1a1a1a;
-        --white: #0d0d0d;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .contact-form,
+    .catering-form,
+    .wholesale-form {
+        display: none;
+    }
+
+    body {
+        color: var(--black);
+        background: var(--white);
     }
 }

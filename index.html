@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chef Zel - Premium culinary creations and cooking expertise">
-    <meta name="keywords" content="chef, cooking, recipes, culinary">
+    <meta name="description" content="Chef Zel - Food, Music, Culture & Creativity. Premium catering, artisanal products, and cultural experiences.">
+    <meta name="keywords" content="chef, catering, food, music, culture, products, events, Washington DC">
     <meta name="author" content="Chef Zel">
-    <title>Chef Zel - Premium Culinary Creations</title>
+    <meta property="og:title" content="Chef Zel - Food, Music, Culture & Creativity">
+    <meta property="og:description" content="Premium culinary creations, catering services, artisanal products, and cultural experiences.">
+    <meta property="og:type" content="website">
+    <title>Chef Zel - Food, Music, Culture & Creativity</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -20,8 +23,11 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#recipes" class="nav-link">Recipes</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#catering" class="nav-link">Catering</a></li>
+                <li><a href="#music" class="nav-link">Music</a></li>
+                <li><a href="#wholesale" class="nav-link">Wholesale</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -34,61 +40,308 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Welcome to Chef Zel</h2>
-            <p>Crafting extraordinary culinary experiences</p>
-            <button class="btn btn-primary">Explore Recipes</button>
+            <h1>Chef Zel</h1>
+            <p class="hero-subtitle">Food, Music, Culture & Creativity</p>
+            <p class="hero-description">Crafting extraordinary culinary experiences infused with art, culture, and community</p>
+            <div class="hero-buttons">
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+                <a href="#catering" class="btn btn-secondary">Book Catering</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Chef Zel</h2>
-            <p>With years of culinary expertise, Chef Zel brings passion, innovation, and precision to every dish. Specializing in modern techniques and traditional flavors, creating unforgettable dining experiences.</p>
-        </div>
-    </section>
-
-    <!-- Recipes Section -->
-    <section id="recipes" class="recipes">
-        <div class="container">
-            <h2>Featured Recipes</h2>
-            <div class="recipes-grid">
-                <article class="recipe-card">
-                    <img src="assets/images/recipe-1.jpg" alt="Signature Dish">
-                    <h3>Signature Dish</h3>
-                    <p>A masterpiece of flavors and technique</p>
-                </article>
-                <article class="recipe-card">
-                    <img src="assets/images/recipe-2.jpg" alt="Seasonal Plate">
-                    <h3>Seasonal Plate</h3>
-                    <p>Fresh ingredients, contemporary presentation</p>
-                </article>
-                <article class="recipe-card">
-                    <img src="assets/images/recipe-3.jpg" alt="Classic Favorite">
-                    <h3>Classic Favorite</h3>
-                    <p>Timeless elegance on a plate</p>
-                </article>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Chef Zel</h2>
+                    <p>Chef Zel is a chef, creator, artist, and entrepreneur building a brand around food, catering, packaged products, music, culture, and community. With a passion for culinary excellence and cultural storytelling, Chef Zel brings authentic flavors, innovative techniques, and meaningful experiences to every creation.</p>
+                    <p>From intimate private dinners to large-scale events, from artisanal packaged products to live musical performances, Chef Zel represents a holistic approach to food and culture that nourishes both body and soul.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/chef-zel-portrait.jpg" alt="Chef Zel Portrait" class="about-img">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Shop / Products Section -->
+    <section id="shop" class="shop">
         <div class="container">
-            <h2>Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Private Chef</h3>
-                    <p>Personalized culinary experiences for your special events</p>
+            <h2>Shop Chef Zel Products</h2>
+            <p class="section-subtitle">Artisanal, premium quality products crafted with care</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/product-cookies.jpg" alt="Gluten-Free Ladyfinger Cookies">
+                    </div>
+                    <h3>Gluten-Free Ladyfinger Cookies</h3>
+                    <p>Delicate and delicious gluten-free ladyfinger cookies perfect for tiramisu or enjoying on their own.</p>
+                    <span class="product-price">$12.99</span>
+                    <a href="#contact" class="btn btn-small">Order Now</a>
                 </div>
-                <div class="service-card">
-                    <h3>Catering</h3>
-                    <p>Professional catering for corporate and personal events</p>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/product-spices.jpg" alt="Premium Spice Collection">
+                    </div>
+                    <h3>Premium Spice Collection</h3>
+                    <p>Carefully curated spices sourced from around the world to elevate your cooking.</p>
+                    <span class="product-price">$18.99</span>
+                    <a href="#contact" class="btn btn-small">Order Now</a>
                 </div>
-                <div class="service-card">
-                    <h3>Cooking Classes</h3>
-                    <p>Learn culinary techniques from an expert chef</p>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/product-pantry.jpg" alt="Pantry Essentials">
+                    </div>
+                    <h3>Pantry Essentials</h3>
+                    <p>Chef-selected pantry staples for gourmet cooking at home. Grains, pasta, oils, and more.</p>
+                    <span class="product-price">From $9.99</span>
+                    <a href="#contact" class="btn btn-small">Order Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/product-sauces.jpg" alt="Artisanal Sauces">
+                    </div>
+                    <h3>Artisanal Sauces</h3>
+                    <p>Small-batch, house-made sauces with authentic flavors and premium ingredients.</p>
+                    <span class="product-price">$14.99</span>
+                    <a href="#contact" class="btn btn-small">Order Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/product-tomatoes.jpg" alt="Canned Tomatoes">
+                    </div>
+                    <h3>Premium Canned Tomatoes</h3>
+                    <p>San Marzano and heirloom varieties, perfectly preserved for authentic Italian cooking.</p>
+                    <span class="product-price">$6.99</span>
+                    <a href="#contact" class="btn btn-small">Order Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/product-beans.jpg" alt="Dry Beans & Lentils">
+                    </div>
+                    <h3>Organic Dry Beans & Lentils</h3>
+                    <p>Heritage varieties including black beans, chickpeas, red lentils, and more. Organic and sustainably sourced.</p>
+                    <span class="product-price">$7.99</span>
+                    <a href="#contact" class="btn btn-small">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section id="catering" class="catering">
+        <div class="container">
+            <h2>Catering Services</h2>
+            <p class="section-subtitle">Elevate your event with Chef Zel's culinary expertise</p>
+            
+            <div class="catering-options">
+                <div class="catering-card">
+                    <h3>Weddings</h3>
+                    <p>Create unforgettable culinary memories for your special day with custom menus and cultural flair.</p>
+                </div>
+                <div class="catering-card">
+                    <h3>Corporate Events</h3>
+                    <p>Impress clients and colleagues with professional catering for conferences, lunches, and celebrations.</p>
+                </div>
+                <div class="catering-card">
+                    <h3>Private Dinners</h3>
+                    <p>Intimate gatherings with personalized menus crafted to your taste and preferences.</p>
+                </div>
+                <div class="catering-card">
+                    <h3>Festivals</h3>
+                    <p>Large-scale event catering with authentic cultural cuisine and community focus.</p>
+                </div>
+                <div class="catering-card">
+                    <h3>Special Events</h3>
+                    <p>From birthday parties to anniversaries, we customize every detail for your celebration.</p>
+                </div>
+            </div>
+
+            <div class="catering-inquiry">
+                <h3>Get a Catering Quote</h3>
+                <form class="catering-form" id="cateringForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" placeholder="Event Date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" placeholder="Number of Guests" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="private">Private Dinner</option>
+                            <option value="festival">Festival</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your event..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <h2>Chef Zel Music</h2>
+            <p class="section-subtitle">Exploring the intersection of culinary arts and musical expression</p>
+            
+            <div class="music-content">
+                <div class="spotify-embed">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4Y3AxmcYJpKuLK6fnIEpQe?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                
+                <div class="music-platforms">
+                    <h3>Listen on Your Favorite Platform</h3>
+                    <div class="platform-buttons">
+                        <a href="#" class="btn btn-platform spotify">Spotify</a>
+                        <a href="#" class="btn btn-platform apple">Apple Music</a>
+                        <a href="#" class="btn btn-platform youtube">YouTube Music</a>
+                        <a href="#" class="btn btn-platform tiktok">TikTok</a>
+                    </div>
+                </div>
+                
+                <div class="social-platforms">
+                    <h3>Follow Chef Zel</h3>
+                    <div class="social-buttons">
+                        <a href="#" class="btn btn-social instagram">Instagram</a>
+                        <a href="#" class="btn btn-social facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wholesale Section -->
+    <section id="wholesale" class="wholesale">
+        <div class="container">
+            <h2>Wholesale Partnerships</h2>
+            <p class="section-subtitle">Bring Chef Zel products to your store, café, restaurant, or retail space</p>
+            
+            <div class="wholesale-info">
+                <div class="wholesale-card">
+                    <h3>For Retailers</h3>
+                    <p>Stock your shelves with premium Chef Zel artisanal products. Competitive wholesale pricing and flexible order minimums.</p>
+                </div>
+                <div class="wholesale-card">
+                    <h3>For Cafés</h3>
+                    <p>Feature Chef Zel products in your café menu and retail space. Build brand partnerships with authentic cultural cuisine.</p>
+                </div>
+                <div class="wholesale-card">
+                    <h3>For Restaurants</h3>
+                    <p>Source premium ingredients and specialty items. Direct relationships with Chef Zel for consistent quality and reliability.</p>
+                </div>
+            </div>
+
+            <div class="wholesale-inquiry">
+                <h3>Wholesale Inquiry Form</h3>
+                <form class="wholesale-form" id="wholesaleForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Business Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Business Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Business Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Business Type</option>
+                            <option value="retail">Retail Store</option>
+                            <option value="cafe">Café/Coffee Shop</option>
+                            <option value="restaurant">Restaurant</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your business and products you're interested in..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Chef Zel Events</h2>
+            <p class="section-subtitle">Join us for festivals, pop-ups, tastings, and special experiences</p>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-tag">Festivals</div>
+                    <img src="assets/images/event-festival.jpg" alt="Festival Events">
+                    <h3>Cultural Festivals</h3>
+                    <p>Experience food, music, and culture celebrations throughout the year. Multi-day events featuring live performances, cooking demos, and cultural experiences.</p>
+                    <a href="#contact" class="btn btn-small">Learn More</a>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-tag">Markets</div>
+                    <img src="assets/images/event-farmers-market.jpg" alt="Farmers Markets">
+                    <h3>Farmers Markets</h3>
+                    <p>Find Chef Zel at local farmers markets. Browse artisanal products, meet Chef Zel, and sample seasonal offerings.</p>
+                    <a href="#contact" class="btn btn-small">Locations</a>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-tag">Pop-Ups</div>
+                    <img src="assets/images/event-popup.jpg" alt="Pop-Up Events">
+                    <h3>Pop-Up Dinners</h3>
+                    <p>Limited-edition culinary experiences. Intimate dinners featuring experimental menus, music, and cultural storytelling.</p>
+                    <a href="#contact" class="btn btn-small">Reserve</a>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-tag">Music</div>
+                    <img src="assets/images/event-album-release.jpg" alt="Album Release Events">
+                    <h3>Album Release Events</h3>
+                    <p>Live album launches with musical performances, food pairings, and community celebration of Chef Zel's latest releases.</p>
+                    <a href="#contact" class="btn btn-small">Details</a>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-tag">Tastings</div>
+                    <img src="assets/images/event-tasting.jpg" alt="Tasting Events">
+                    <h3>Tasting Events</h3>
+                    <p>Curated tasting experiences showcasing new products, seasonal menus, and culinary innovations from Chef Zel.</p>
+                    <a href="#contact" class="btn btn-small">Register</a>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-tag">Promotions</div>
+                    <img src="assets/images/event-promotion.jpg" alt="Live Promotions">
+                    <h3>Live Promotions</h3>
+                    <p>Special appearances, live cooking demonstrations, and exclusive product launches at select locations and events.</p>
+                    <a href="#contact" class="btn btn-small">Follow</a>
                 </div>
             </div>
         </div>
@@ -97,24 +350,80 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Questions about products, catering, events, or partnerships?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <a href="mailto:info@chefzel.com">info@chefzel.com</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>700 K Street NW<br>Washington, D.C. 20001</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-icon">Instagram</a>
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Subject</option>
+                            <option value="products">Products Inquiry</option>
+                            <option value="catering">Catering Inquiry</option>
+                            <option value="wholesale">Wholesale Partnership</option>
+                            <option value="events">Events</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Chef Zel. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="social-link">Facebook</a>
-                <a href="#" class="social-link">Instagram</a>
-                <a href="#" class="social-link">Twitter</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Chef Zel</h4>
+                    <p>Food, Music, Culture & Creativity</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#catering">Catering</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:info@chefzel.com">info@chefzel.com</a></p>
+                    <p>700 K Street NW<br>Washington, D.C. 20001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chef Zel. All rights reserved.</p>
             </div>
         </div>
     </footer>
