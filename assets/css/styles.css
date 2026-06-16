@@ -1,17 +1,24 @@
 /* Root Variables - Design System */
 :root {
-    --primary-cream: #f5f1e8;
-    --primary-brown: #8b6f47;
-    --dark-brown: #3d3226;
-    --black: #1a1a1a;
+    /* Chef Zel Brand Colors */
+    --chef-red: #b5302e;
+    --deep-black: #11100e;
+    --warm-cream: #fff4df;
     --white: #ffffff;
-    --soft-gold: #d4af37;
-    --earth-tan: #a89968;
-    --light-beige: #e8e1d3;
-    --text-dark: #2a2520;
+    --saffron-gold: #e0b93f;
+    --burnt-orange: #d96b27;
+    --basil-green: #2f7d4f;
+    
+    /* Secondary colors */
+    --light-cream: #fffbf0;
+    --dark-cream: #f5f1e8;
+    --text-dark: #11100e;
     --text-light: #666666;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+    
+    /* Shadows and effects */
+    --shadow: 0 4px 12px rgba(17, 16, 14, 0.1);
+    --shadow-lg: 0 8px 24px rgba(17, 16, 14, 0.15);
+    --shadow-red: 0 8px 24px rgba(181, 48, 46, 0.15);
 }
 
 /* General Styles */
@@ -42,13 +49,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', serif;
     font-weight: 600;
-    color: var(--dark-brown);
+    color: var(--deep-black);
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    color: var(--deep-black);
 }
 
 p {
@@ -58,9 +66,9 @@ p {
 
 /* Navigation */
 .navbar {
-    background: var(--dark-brown);
+    background: var(--deep-black);
     color: var(--white);
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -78,11 +86,15 @@ p {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--soft-gold);
-    letter-spacing: 2px;
+.logo-image {
+    height: 70px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu {
@@ -98,10 +110,11 @@ p {
     transition: color 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .nav-link:hover {
-    color: var(--soft-gold);
+    color: var(--saffron-gold);
 }
 
 .hamburger {
@@ -121,7 +134,7 @@ p {
 /* Hero Section */
 .hero {
     position: relative;
-    background: linear-gradient(135deg, var(--dark-brown) 0%, #5a4a36 100%);
+    background: linear-gradient(135deg, var(--deep-black) 0%, #1f1d1a 100%);
     color: var(--white);
     padding: 150px 20px;
     text-align: center;
@@ -130,6 +143,7 @@ p {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-bottom: 5px solid var(--chef-red);
 }
 
 .hero-overlay {
@@ -138,7 +152,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="30" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="1200" height="600" fill="url(%23pattern)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="rgba(224,185,63,0.1)"/></pattern></defs><rect width="1200" height="600" fill="none"/><rect width="1200" height="600" fill="url(%23pattern)"/></svg>');
     opacity: 0.5;
 }
 
@@ -151,8 +165,9 @@ p {
 .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 0.5rem;
-    color: var(--soft-gold);
+    color: var(--white);
     letter-spacing: 3px;
+    font-weight: 700;
 }
 
 .hero-subtitle {
@@ -160,15 +175,17 @@ p {
     margin-bottom: 1rem;
     font-weight: 300;
     letter-spacing: 2px;
+    color: var(--saffron-gold);
 }
 
 .hero-description {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: var(--light-beige);
+    color: var(--warm-cream);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.8;
 }
 
 .hero-buttons {
@@ -195,27 +212,28 @@ p {
 }
 
 .btn-primary {
-    background: var(--soft-gold);
-    color: var(--dark-brown);
-    border-color: var(--soft-gold);
+    background: var(--chef-red);
+    color: var(--white);
+    border-color: var(--chef-red);
 }
 
 .btn-primary:hover {
-    background: transparent;
-    color: var(--soft-gold);
+    background: var(--burnt-orange);
+    border-color: var(--burnt-orange);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-red);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--soft-gold);
-    border-color: var(--soft-gold);
+    color: var(--saffron-gold);
+    border-color: var(--saffron-gold);
 }
 
 .btn-secondary:hover {
-    background: var(--soft-gold);
-    color: var(--dark-brown);
+    background: var(--saffron-gold);
+    color: var(--deep-black);
+    transform: translateY(-2px);
 }
 
 .btn-small {
@@ -231,22 +249,26 @@ p {
 }
 
 .btn-platform {
-    background: var(--light-beige);
-    color: var(--dark-brown);
+    background: var(--warm-cream);
+    color: var(--deep-black);
+    border: 2px solid var(--chef-red);
 }
 
 .btn-platform:hover {
-    background: var(--soft-gold);
+    background: var(--chef-red);
+    color: var(--white);
     transform: translateY(-3px);
 }
 
 .btn-social {
-    background: var(--earth-tan);
+    background: var(--chef-red);
     color: var(--white);
+    border: 2px solid var(--chef-red);
 }
 
 .btn-social:hover {
-    background: var(--dark-brown);
+    background: var(--burnt-orange);
+    border-color: var(--burnt-orange);
     transform: translateY(-3px);
 }
 
@@ -258,7 +280,7 @@ section {
 section h2 {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
-    color: var(--dark-brown);
+    color: var(--deep-black);
 }
 
 .section-subtitle {
@@ -273,8 +295,8 @@ section h2 {
 
 /* About Section */
 .about {
-    background: var(--primary-cream);
-    border-top: 4px solid var(--soft-gold);
+    background: var(--warm-cream);
+    border-top: 4px solid var(--chef-red);
 }
 
 .about-content {
@@ -287,6 +309,7 @@ section h2 {
 .about-text h2 {
     text-align: left;
     margin-bottom: 1.5rem;
+    color: var(--deep-black);
 }
 
 .about-text p {
@@ -298,13 +321,14 @@ section h2 {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: var(--shadow-lg);
+    border: 3px solid var(--chef-red);
 }
 
 .about-img {
     width: 100%;
     height: auto;
     display: block;
-    background: linear-gradient(135deg, var(--primary-brown) 0%, var(--earth-tan) 100%);
+    background: linear-gradient(135deg, var(--chef-red) 0%, var(--burnt-orange) 100%);
 }
 
 /* Shop / Products Section */
@@ -321,7 +345,7 @@ section h2 {
 
 .product-card {
     background: var(--white);
-    border: 1px solid var(--light-beige);
+    border: 2px solid var(--warm-cream);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -332,14 +356,15 @@ section h2 {
 
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-red);
+    border-color: var(--chef-red);
 }
 
 .product-image {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--primary-brown) 0%, var(--earth-tan) 100%);
+    background: linear-gradient(135deg, var(--chef-red) 0%, var(--burnt-orange) 100%);
 }
 
 .product-image img {
@@ -351,7 +376,7 @@ section h2 {
 .product-card h3 {
     padding: 1.5rem 1.5rem 0.5rem;
     font-size: 1.2rem;
-    color: var(--dark-brown);
+    color: var(--deep-black);
 }
 
 .product-card p {
@@ -365,7 +390,7 @@ section h2 {
     padding: 1rem 1.5rem 0;
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--primary-brown);
+    color: var(--chef-red);
 }
 
 .product-card .btn {
@@ -374,7 +399,7 @@ section h2 {
 
 /* Catering Section */
 .catering {
-    background: linear-gradient(180deg, var(--white) 0%, var(--primary-cream) 100%);
+    background: linear-gradient(180deg, var(--white) 0%, var(--warm-cream) 100%);
 }
 
 .catering-options {
@@ -387,7 +412,7 @@ section h2 {
 .catering-card {
     background: var(--white);
     padding: 2rem;
-    border-left: 4px solid var(--soft-gold);
+    border-left: 4px solid var(--chef-red);
     border-radius: 4px;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
@@ -395,12 +420,13 @@ section h2 {
 
 .catering-card:hover {
     transform: translateX(8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-red);
 }
 
 .catering-card h3 {
     margin-bottom: 1rem;
-    color: var(--primary-brown);
+    color: var(--chef-red);
+    font-size: 1.3rem;
 }
 
 .catering-inquiry {
@@ -410,11 +436,13 @@ section h2 {
     box-shadow: var(--shadow);
     max-width: 600px;
     margin: 0 auto;
+    border: 2px solid var(--warm-cream);
 }
 
 .catering-inquiry h3 {
     margin-bottom: 1.5rem;
     text-align: center;
+    color: var(--deep-black);
 }
 
 /* Forms */
@@ -435,7 +463,7 @@ section h2 {
 .form-group select,
 .form-group textarea {
     padding: 12px 15px;
-    border: 1px solid var(--light-beige);
+    border: 2px solid var(--warm-cream);
     border-radius: 4px;
     font-family: 'Arial', sans-serif;
     font-size: 0.95rem;
@@ -448,9 +476,9 @@ section h2 {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-brown);
-    box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
-    background: var(--primary-cream);
+    border-color: var(--chef-red);
+    box-shadow: 0 0 0 3px rgba(181, 48, 46, 0.1);
+    background: var(--light-cream);
 }
 
 .form-group textarea {
@@ -460,7 +488,7 @@ section h2 {
 
 /* Music Section */
 .music {
-    background: var(--primary-cream);
+    background: var(--warm-cream);
 }
 
 .music-content {
@@ -484,6 +512,7 @@ section h2 {
 .social-platforms h3 {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    color: var(--deep-black);
 }
 
 .platform-buttons,
@@ -507,35 +536,45 @@ section h2 {
 }
 
 .wholesale-card {
-    background: var(--primary-cream);
+    background: var(--warm-cream);
     padding: 2.5rem;
     border-radius: 8px;
     text-align: center;
     box-shadow: var(--shadow);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.wholesale-card:hover {
+    border-color: var(--chef-red);
+    box-shadow: var(--shadow-red);
 }
 
 .wholesale-card h3 {
     margin-bottom: 1rem;
-    color: var(--primary-brown);
+    color: var(--chef-red);
+    font-size: 1.3rem;
 }
 
 .wholesale-inquiry {
-    background: var(--primary-cream);
+    background: var(--warm-cream);
     padding: 3rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
     max-width: 600px;
     margin: 0 auto;
+    border: 2px solid var(--chef-red);
 }
 
 .wholesale-inquiry h3 {
     margin-bottom: 1.5rem;
     text-align: center;
+    color: var(--deep-black);
 }
 
 /* Events Section */
 .events {
-    background: linear-gradient(180deg, var(--primary-cream) 0%, var(--white) 100%);
+    background: linear-gradient(180deg, var(--warm-cream) 0%, var(--white) 100%);
 }
 
 .events-grid {
@@ -554,19 +593,21 @@ section h2 {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    border: 2px solid transparent;
 }
 
 .event-card:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-red);
+    border-color: var(--chef-red);
 }
 
 .event-tag {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: var(--soft-gold);
-    color: var(--dark-brown);
+    background: var(--chef-red);
+    color: var(--white);
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -579,12 +620,13 @@ section h2 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    background: linear-gradient(135deg, var(--primary-brown) 0%, var(--earth-tan) 100%);
+    background: linear-gradient(135deg, var(--chef-red) 0%, var(--burnt-orange) 100%);
 }
 
 .event-card h3 {
     padding: 1.5rem 1.5rem 0.5rem;
     font-size: 1.2rem;
+    color: var(--deep-black);
 }
 
 .event-card p {
@@ -618,18 +660,19 @@ section h2 {
 
 .info-item h3 {
     margin-bottom: 0.8rem;
-    color: var(--primary-brown);
+    color: var(--chef-red);
+    font-size: 1.2rem;
 }
 
 .info-item a {
-    color: var(--primary-brown);
+    color: var(--deep-black);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .info-item a:hover {
-    color: var(--soft-gold);
+    color: var(--chef-red);
 }
 
 .social-links {
@@ -639,27 +682,29 @@ section h2 {
 }
 
 .social-icon {
-    color: var(--primary-brown);
+    color: var(--deep-black);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: var(--soft-gold);
+    color: var(--chef-red);
 }
 
 .contact-form {
-    background: var(--primary-cream);
+    background: var(--warm-cream);
     padding: 2rem;
     border-radius: 8px;
+    border: 2px solid var(--chef-red);
 }
 
 /* Footer */
 .footer {
-    background: var(--dark-brown);
+    background: var(--deep-black);
     color: var(--white);
     padding: 3rem 20px 1rem;
+    border-top: 3px solid var(--chef-red);
 }
 
 .footer-content {
@@ -670,8 +715,9 @@ section h2 {
 }
 
 .footer-section h4 {
-    color: var(--soft-gold);
+    color: var(--saffron-gold);
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .footer-section ul {
@@ -683,20 +729,20 @@ section h2 {
 }
 
 .footer-section a {
-    color: var(--light-beige);
+    color: var(--warm-cream);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-    color: var(--soft-gold);
+    color: var(--chef-red);
 }
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 1.5rem;
     text-align: center;
-    color: var(--light-beige);
+    color: var(--warm-cream);
     font-size: 0.9rem;
 }
 
