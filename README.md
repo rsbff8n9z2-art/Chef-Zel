@@ -112,33 +112,104 @@ Each product card includes price, description, and order button.
 
 ## 🎨 Color Palette
 
+.navbar,
+nav,
+.header,
+.site-header {
+    background: #11100e !important;
+    color: #ffffff !important;
+}
+
+.navbar a,
+nav a,
+.nav-links a {
+    color: #ffffff !important;
+}
+
+.navbar a:hover,
+nav a:hover,
+.nav-links a:hover {
+    color: #e0b93f !important;
+}
+
+.hero,
+.hero-section,
+#home {
+    background: #11100e !important;
+    color: #ffffff !important;
+    border-bottom: 5px solid #b5302e !important;
+}
+
+.hero h1,
+.hero-title,
+#home h1 {
+    color: #ffffff !important;
+}
+
+.hero h2,
+.hero-subtitle,
+#home h2 {
+    color: #e0b93f !important;
+}
+
+.hero p,
+#home p {
+    color: #fff4df !important;
+}
+
 .btn-primary,
 .cta-button,
-.shop-button {
-    background: #b5302e;
-    color: #ffffff;
-    border: 2px solid #b5302e;
+.shop-button,
+button[type="submit"] {
+    background: #b5302e !important;
+    color: #ffffff !important;
+    border: 2px solid #b5302e !important;
 }
 
 .btn-primary:hover,
 .cta-button:hover,
-.shop-button:hover {
-    background: #d96b27;
-    border-color: #d96b27;
-    color: #ffffff;
+.shop-button:hover,
+button[type="submit"]:hover {
+    background: #d96b27 !important;
+    border-color: #d96b27 !important;
+    color: #ffffff !important;
 }
 
 .btn-secondary,
 .catering-button {
-    background: transparent;
-    color: #e0b93f;
-    border: 2px solid #e0b93f;
+    background: transparent !important;
+    color: #e0b93f !important;
+    border: 2px solid #e0b93f !important;
 }
 
 .btn-secondary:hover,
 .catering-button:hover {
-    background: #e0b93f;
-    color: #11100e;
+    background: #e0b93f !important;
+    color: #11100e !important;
+}
+
+section:nth-child(even),
+.about,
+.products,
+.wholesale,
+.contact {
+    background: #fff4df !important;
+}
+
+h1,
+h2,
+h3,
+.section-title {
+    color: #11100e !important;
+}
+
+.card,
+.product-card,
+.service-card,
+.event-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(181, 48, 46, 0.25) !important;
+    box-shadow: 0 8px 24px rgba(17, 16, 14, 0.08) !important;
 }
 ## 🚀 Quick Start - Run Locally
 
