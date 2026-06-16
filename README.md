@@ -130,7 +130,7 @@ Each product card includes price, description, and order button.
     --burnt-orange: #d96b27;
     --basil-green: #2f7d4f;
 }
-
+---
 ## 🚀 Quick Start - Run Locally
 
 ### Method 1: Direct Browser (Simplest)
