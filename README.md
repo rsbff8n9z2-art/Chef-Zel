@@ -116,22 +116,20 @@ Each product card includes price, description, and order button.
 |-------|-----|-------|
 :root {
     --primary-cream: #fff4df;
-    --primary-brown: #b83a2f;
-    --dark-brown: #2b1f18;
-    --soft-gold: #f2b705;
+    --primary-brown: #b5302e;
+    --dark-brown: #11100e;
+    --soft-gold: #e0b93f;
     --earth-tan: #d96b27;
-    --black: #171717;
+    --black: #11100e;
     --white: #ffffff;
 
-    --spiced-red: #b83a2f;
-    --golden-saffron: #f2b705;
+    --brand-red: #b5302e;
+    --deep-black: #11100e;
+    --warm-cream: #fff4df;
+    --saffron-gold: #e0b93f;
     --burnt-orange: #d96b27;
     --basil-green: #2f7d4f;
-    --deep-espresso: #2b1f18;
-    --warm-cream: #fff4df;
-    --charcoal-black: #171717;
 }
----
 
 ## 🚀 Quick Start - Run Locally
 
