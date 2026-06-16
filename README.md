@@ -114,14 +114,23 @@ Each product card includes price, description, and order button.
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Cream | #f5f1e8 | Background sections |
-| Brown | #8b6f47 | Primary accent |
-| Dark Brown | #3d3226 | Navigation, headings |
-| Soft Gold | #d4af37 | Highlights, buttons |
-| Earth Tan | #a89968 | Secondary accent |
-| Black | #1a1a1a | Text, contrast |
-| White | #ffffff | Main background |
+:root {
+    --primary-cream: #fff4df;
+    --primary-brown: #b83a2f;
+    --dark-brown: #2b1f18;
+    --soft-gold: #f2b705;
+    --earth-tan: #d96b27;
+    --black: #171717;
+    --white: #ffffff;
 
+    --spiced-red: #b83a2f;
+    --golden-saffron: #f2b705;
+    --burnt-orange: #d96b27;
+    --basil-green: #2f7d4f;
+    --deep-espresso: #2b1f18;
+    --warm-cream: #fff4df;
+    --charcoal-black: #171717;
+}
 ---
 
 ## 🚀 Quick Start - Run Locally
