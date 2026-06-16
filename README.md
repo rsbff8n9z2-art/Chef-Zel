@@ -112,25 +112,34 @@ Each product card includes price, description, and order button.
 
 ## 🎨 Color Palette
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-:root {
-    --primary-cream: #fff4df;
-    --primary-brown: #b5302e;
-    --dark-brown: #11100e;
-    --soft-gold: #e0b93f;
-    --earth-tan: #d96b27;
-    --black: #11100e;
-    --white: #ffffff;
-
-    --brand-red: #b5302e;
-    --deep-black: #11100e;
-    --warm-cream: #fff4df;
-    --saffron-gold: #e0b93f;
-    --burnt-orange: #d96b27;
-    --basil-green: #2f7d4f;
+.btn-primary,
+.cta-button,
+.shop-button {
+    background: #b5302e;
+    color: #ffffff;
+    border: 2px solid #b5302e;
 }
----
+
+.btn-primary:hover,
+.cta-button:hover,
+.shop-button:hover {
+    background: #d96b27;
+    border-color: #d96b27;
+    color: #ffffff;
+}
+
+.btn-secondary,
+.catering-button {
+    background: transparent;
+    color: #e0b93f;
+    border: 2px solid #e0b93f;
+}
+
+.btn-secondary:hover,
+.catering-button:hover {
+    background: #e0b93f;
+    color: #11100e;
+}
 ## 🚀 Quick Start - Run Locally
 
 ### Method 1: Direct Browser (Simplest)
